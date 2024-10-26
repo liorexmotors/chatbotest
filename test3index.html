@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אתר עם AI Nav</title>
+    <style>
+        /* עיצוב ראשי */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, p {
+            color: fuchsia; /* צבע ורוד פוקסיה */
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        /* עיצוב שולחני */
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        /* התאמות רספונסיביות למסכים קטנים יותר */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* מקטין את הגודל של הכותרת במסכים קטנים */
+            }
+            p {
+                font-size: 1.2em; /* מקטין את גודל הפסקה במסכים קטנים */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* מקטין יותר את הכותרת בטלפונים קטנים */
+            }
+            p {
+                font-size: 1em; /* גודל טקסט סטנדרטי לטלפונים */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>בדיקת קר-חכם</h1>
+        <p>לחץ על החלונית למטה</p>
+
+        <!-- הקוד שסיפקת -->
+        <co-pilot platform-id="bfee6fbc-1fb9-4a94-86a6-aa05a548346c" 
+                  user-id="188b06ee-8d2d-4960-9ff5-e7385f6de640" 
+                  chatbot-id="eddf598c-6616-4f86-bcd9-3355f811cafe" 
+                  is-local="false">
+            <a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">AI Nav</a>
+        </co-pilot>
+        <script src="https://cdn.chatsimple.ai/ai-loader.js" defer></script>
+    </div>
+</body>
+</html>
